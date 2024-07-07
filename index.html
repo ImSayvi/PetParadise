@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Paradise - psi hotel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -17,17 +18,26 @@
 
 <body>
 
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><img src="img/logoFirstColor.png" alt=""><a href="#">Pet Paradise</a></div>
-            <ul class="menu">
-                <li><a href="#home">Strona główna</a></li> <!-- dodać kategorie 'opinie' -->
+            
+            <div class="logo"><a href="#"><img src="img/logoFirstColor.png" alt="">Pet Paradise</a></div>
+            <ul class="menu nav-items">
+                <li><a href="#home">Strona główna</a></li>
                 <li><a href="#about">O nas</a></li>
                 <li><a href="#terms">Warunki przyjęcia</a></li>
                 <li><a href="#services">Cennik</a></li>
-                <li><a href="#experience">Opinie</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#testimonials">Opinie</a></li>
+                <li><a href="#contact">Kontakt </a></li>
             </ul>
+            <span><i class="fa-solid fa-phone"></i>+48 570 186 065</span>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -35,8 +45,8 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-2">Pet Paradise</div>
-                <div class="text-3">Hotel dla Twojego pupila <span></span> </div>
-                <a href="" class="btn">Zarezerwuj termin <i class="fa-solid fa-phone"></i></a>
+                <div class="text-3">Hotel dla Twojego pupila </div>
+                <a href="#contact" class="btn">Zarezerwuj termin <i class="fa-solid fa-phone"></i></a>
             </div>
             <div class="logo">
                 <img src="img/logoWhite.png" alt="">
@@ -195,12 +205,13 @@
             <h2 class="section-tittle-02">Cennik</h2>
             <div class="content">
                 <div class="services-description">
-                    <h3>Pamiętaj, że nasze ceny mogą się zmienić w zależności od wymagań, temperamentu psa czy czasu pobytu</h3>
+                    <h3>Pamiętaj, że nasze ceny mogą się zmienić w zależności od wymagań, temperamentu psa czy czasu
+                        pobytu</h3>
                 </div>
                 <ul class="service-list">
                     <li class="service-container">
                         <div class="service-card">
-                            <img class="small" src="img/smallPng.png" alt="cziłała" >
+                            <img class="small" src="img/smallPng.png" alt="cziłała">
                             <h3>100 zł</h3>
                             <p>Małe pieski</p>
                             <div class="learn-more-btn">Dowiedz się więcej <i class="fas fa-long-arrow-alt-right"></i>
@@ -213,8 +224,8 @@
                                 <h3>Jaki to mały piesek?</h3>
                                 <ul>
                                     <li><i class="fas fa-check-circle"></i> <b>Małe</b> pieski <b>do 10kg</b> takie jak
-                                        np. Shih Tzu, Yorkshire terrier, pekińczyk czy maltańczyk.  </li>
-                                        <img src="img/small.jpg" alt="">
+                                        np. Shih Tzu, Yorkshire terrier, pekińczyk czy maltańczyk. </li>
+                                    <img src="img/small.jpg" alt="">
                                 </ul>
                             </div>
                         </div>
@@ -236,7 +247,7 @@
                                 <ul>
                                     <li><i class="fas fa-check-circle"></i> <b>Średnie</b> psy <b>do 25kg</b> to np.
                                         beagle, cocker spaniel, colie</li>
-                                        <img src="img/middle.jpg" alt="">
+                                    <img src="img/middle.jpg" alt="">
                                 </ul>
                             </div>
                         </div>
@@ -259,7 +270,7 @@
                                 <ul>
                                     <li><i class="fas fa-check-circle"></i> <b>Duże</b> psy, <b>ponad 25kg</b> to np.
                                         berneński pies pasterski, owczarek niemiecki, golden retriever</li>
-                                        <img src="img/big.jpg" alt="">
+                                    <img src="img/big.jpg" alt="">
                                 </ul>
                             </div>
                         </div>
@@ -294,6 +305,238 @@
         </div>
     </section>
 
+    <section class="testimonials section" id="testimonials">
+        <div class="container02 section">
+            <div class="flex-center container">
+                <h1 class="section-tittle-01">Nasi klienci</h1>
+                <h2 class="section-tittle-02">Nasi klienci</h2>
+
+            </div>
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/nina.png" alt="nina">
+                                <div class="text-box">
+                                    <h3 class="name">Nina</h3>
+                                </div>
+                            </div>
+                            <p>Miejsce godne polecenia. Właściciele mili i widać , że kochają zwierzęta. Łatwy i szybki
+                                kontakt z właścicielką . Wysyłała informacje i zdjęcia naszego czworonoga.Nasz piesek
+                                wrócił radosny i pogodny. Myślę, że jeszcze nie raz skorzystamy z usług tego hotelu.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/unnamed1.png" alt="Joanna">
+                                <div class="text-box">
+                                    <h3 class="name">Joanna</h3>
+                                </div>
+                            </div>
+                            <p>Gorąco polecamy 👌😍 Nasz Gromi bardzo zadowolony. Opieka na najwyższym poziomie 👌😍 Już
+                                wiemy, gdzie nasz pupil będzie spędzał urlop podczas naszych wyjazdów 👌😍.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/paulina.png" alt="Paulina">
+                                <div class="text-box">
+                                    <h3 class="name">Paulina</h3>
+                                </div>
+                            </div>
+                            <p>Polecam serdecznie to miejsce. Ursa zadowolona, a to chyba najlepiej świadczy o poziomie
+                                opieki nad psiakami. Tereny piękne, zwierzaki mają ogrom miejsca na spacery. Właściciele
+                                baardzo zwierzolubni i serdeczni. Na pewno będziemy wracać :)</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/izabela.png" alt="Izabela">
+                                <div class="text-box">
+                                    <h3 class="name">Izabela</h3>
+                                </div>
+                            </div>
+                            <p>Wypróbowałam ten hotelik podczas weekendowego wyjazdu i bez wahania ponownie powierzę tym
+                                ludziom psa podczas planowanego dłuższego urlopu. W opiekę nad psami zaangażowana jest
+                                cała rodzinka i widać, że mają podejście do zwierząt. Mój piesek sprawiał wrażenie
+                                zadowolonego z pobytu i widać, że niczego mu nie brakowało. W okolicy brakuje miejsc
+                                takich jak to.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/iwona.png" alt="Iwona">
+                                <div class="text-box">
+                                    <h3 class="name">Iwona</h3>
+                                </div>
+                            </div>
+                            <p>Profesjonalne podejście do psiaków oraz rewelacyjna atmosfera jaka panuje w hotelu,
+                                zasługują na najwyższe noty. Archie był 2 dni, ale następnym razem będzie dłużej i już
+                                nie może się doczekać spotkania z nową "ciocią"😇 Polecam.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-pagination js-testimonials-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="contact">
+        <div class="container flex-center">
+            <h1 class="section-tittle-01">Skontaktuj się z nami!</h1>
+            <h2 class="section-tittle-02">Skontaktuj się z nami!</h2>
+        </div>
+        <div class="contactUs">
+
+        </div>
+        <div class="box">
+            <div class="contact form">
+                <h3>Wyślij wiadomość</h3>
+                <form action="send-email.php" method="POST">
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Imię</span>
+                                <input type="text" name="name" placeholder="Wprowadź imię..." required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Numer Telefonu</span>
+                                <input type="text" name="phone" placeholder="Wprowadź swój numer..." required>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" name="email" placeholder="Wprowadź email..." required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Tytuł</span>
+                                <input type="text" name="subject" placeholder="Podaj tytuł wiadomości..." required>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Wiadomość</span>
+                                <textarea name="message" placeholder="Napisz do nas..." required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <button class="btn" type="submit">Wyślij<i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="contact info">
+                <h3>Dane kontaktowe</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Zajączkowo 20B, Milejewo</p>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <a href="mailto:petparadise122@gmail.com">petparadise122@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-phone"></i></span>
+                        <a href="tel:+48570186065">+48 570 186 065</a>
+                    </div>
+
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/hotelPetPara"><i class="fa-brands fa-facebook"></i>Zobacz nas na facebook'u!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2331.2442152284552!2d19.568811177011728!3d54.24656370698742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2cb6ec74c67fd%3A0x847b90a1ea0a76bd!2sPet%20paradise%20hotel%20dla%20psow!5e0!3m2!1spl!2spl!4v1719948288410!5m2!1spl!2spl"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <img src="img/logoFirstColor.png" alt="">
+                <h2>Pet Paradise</h2>
+                <p>Hotel dla zwierząt</p>
+                <a href="#about">O nas</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>Więcej</h3>
+                <ul>
+                    <li><a href="#terms">Warunki przyjęcia</a></li>
+                    <li><a href="#services">Cennik</a></li>
+                    <li><a href="#testimonials">Opinie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Strona zrobiona przez</h3>
+                <p>Julia Sparzak</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/SayviXD"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/sayvidoinstuff"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright group">
+            <p>© 2024 by Sayvi. All rights reserved. </p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
