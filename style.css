@@ -913,6 +913,14 @@ footer a{
     align-items: center;
     text-align: center;
     flex-direction: column;
+
+}
+.footer-container .follow i{
+    transition: all .3s ease;
+}
+
+.footer-container .follow i:hover{
+    color: #fff;
 }
 
 .footer-container .info h3, .footer-container .follow h3{
@@ -938,6 +946,16 @@ footer a{
     font-size: var(--normal-font-size);
     font-weight: 300;
     margin-top: 50px;
+}
+
+.footer-copyright a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 .scrollToTop-btn{
