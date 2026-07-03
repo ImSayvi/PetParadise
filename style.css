@@ -39,6 +39,11 @@
     list-style: none;
 }
 
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
     background: var(--scroll-bar-color);
@@ -469,9 +474,17 @@ body{
     margin-bottom: 50px;
 }
 
+.holiday-note{
+    text-align: center;
+    margin-top: 30px;
+    font-size: var(--small-font-size);
+    color: var(--third-color);
+}
+
 .service-list{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(225px, 280px));
+    justify-content: center;
     max-width: 100%;
     margin: 0 auto;
     gap: 20px;
@@ -1152,5 +1165,36 @@ footer a:hover{
         font-size: 1.5em;
     }
 
-    
+
+}
+
+@media (max-width: 600px){
+    .max-width{
+        padding: 0 20px;
+    }
+
+    .navbar .logo{
+        margin-left: 0;
+        padding-right: 10px;
+    }
+
+    .navbar .logo a{
+        font-size: 1.4em;
+    }
+
+    .navbar img{
+        height: 32px;
+    }
+
+    .navbar .max-width > span{
+        display: none;
+    }
+
+    .terms-info{
+        grid-template-columns: 1fr;
+    }
+
+    .service-list{
+        grid-template-columns: 1fr;
+    }
 }
